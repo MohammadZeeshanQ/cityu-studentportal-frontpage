@@ -1,0 +1,29 @@
+@font-face {
+  font-family: lexend-regular;
+  src: url("./Assets/Fonts/Lexend-Regular.ttf");
+}
+
+@font-face {
+  font-family: lexend-semibold;
+  src: url("./Assets/Fonts/Lexend-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: lexend-bold;
+  src: url("./Assets/Fonts/Lexend-Bold.ttf");
+}
+
+@font-face {
+  font-family: mont-regular;
+  src: url("./Assets/Fonts/MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+  font-family: mont-semibold;
+  src: url("./Assets/Fonts/MontserratAlternates-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: mont-bold;
+  src: url("./Assets/Fonts/MontserratAlternates-Bold.ttf");
+}
