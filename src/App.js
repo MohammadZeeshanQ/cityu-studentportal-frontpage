@@ -15,7 +15,7 @@ export default function App() {
         <Switch>
           <Route exact path='/' component={Main} />
           <Route exact path ='/newportal' component={NewPortal} />
-          <Route exact path ='/newportal' component={OldPortal} />
+          <Route exact path ='/oldportal' component={OldPortal} />
           <Route path='*' component={ErrorPage} />
         </Switch>
       </BrowserRouter>
