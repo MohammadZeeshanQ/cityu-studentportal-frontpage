@@ -13,6 +13,9 @@ const useStyles = makeStyles({
     },
     gridItem:{
         position: 'relative',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     redBackground:{
         position: 'absolute',
@@ -32,24 +35,14 @@ const useStyles = makeStyles({
         objectFit: 'cover',
         zIndex: '-2',
     },  
-    greyOverlay:{
-        position: 'absolute',
-        top: '0',
-        left: '0',
-        zIndex: '-2',
-        width: '100%',
-        height: '100%',
-        backgroundColor: '#898888',
-        opacity: '40%',
-
-        '&:hover':{
-            opacity:'0%',
-        },
-    },
     TextDiv:{
         zIndex: '1',
         padding: '15em 0',
         textAlign: 'center',
+
+        '@media(max-width: 600px)':{
+            padding: '0',
+        },
     },
     headerWhite:{
         fontFamily: 'Lexend-SemiBold',
@@ -60,8 +53,8 @@ const useStyles = makeStyles({
         color: '#000000',
     },
     btnRedirect:{
-        padding: '.7em 3em',
-        borderRadius: '.5em',
+        padding: '1em 4em',
+        borderRadius: '25px',
         fontFamily: 'Lexend-SemiBold',
         marginTop: '1em',
         
@@ -88,7 +81,6 @@ export default function Main() {
                     xs={12} sm={6} md={6}
                 >
                     <img src={RedBackground} className={classes.redBackground} alt='red Background' />
-                    <div className={classes.greyOverlay}></div>
 
                     <div className={classes.TextDiv}>
                         <Typography variant='h4' className={classes.headerWhite} gutterBottom>
@@ -106,7 +98,6 @@ export default function Main() {
                     xs={12} sm={6} md={6}
                 >
                     <img src={WhiteBackground} className={classes.whiteBackground} alt='white Background' />
-                    <div className={classes.greyOverlay}></div>
 
                     <div className={classes.TextDiv}>
                         <Typography variant='h4' className={classes.headerBlack} gutterBottom>
