@@ -1,6 +1,6 @@
 import React from 'react'
 import {makeStyles, Grid, Button, Typography} from '@material-ui/core';
-import RedBackground from '../Assets/Images/MainBackgroundRed.jpg';
+import RedBackground from '../Assets/Images/MainBackgroundRed2.jpg';
 import WhiteBackground from '../Assets/Images/MainBackgroundWhite.jpg';
 
 const useStyles = makeStyles({
@@ -57,6 +57,8 @@ const useStyles = makeStyles({
         borderRadius: '25px',
         fontFamily: 'Lexend-SemiBold',
         marginTop: '1em',
+        backgroundColor: '#fcfcfc',
+        boxShadow: '0 8px 20px 0 rgb(0 0 0 / 20%) 0 6px 20px 0 rgb(0 0 0 / 19%)',
         
         '&:hover':{
             transform: 'scale(1.15)',

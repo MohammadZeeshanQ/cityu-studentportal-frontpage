@@ -15,11 +15,11 @@ const useStyles = makeStyles({
         },
     },
     header:{
-        color: '#6617cb',
+        color: '#313030',
         fontFamily: 'Lexend-Bold',
     },
     subHeader:{
-        color: '#cb218e',
+        color: '#756D6D',
         fontFamily: 'mont-Regular',
     },
     btnDiv:{
@@ -28,9 +28,10 @@ const useStyles = makeStyles({
     btnRedirect:{
         fontFamily: 'Lexend-SemiBold',
         color: '#FFFFFF',
-        BackgroundColor: '#6617cb',
-        backgroundImage: 'linear-gradient(315deg, #cb218e 0%, #6617cb 74%)',
+        BackgroundColor: '#5b6467',
+        backgroundImage: 'linear-gradient(315deg, #5b6467 0%, #8b939a 74%)',
         borderRadius: '.5em',
+        padding: '1em 3em',
 
         '&:hover':{
             transform: 'scale(1.15)',
