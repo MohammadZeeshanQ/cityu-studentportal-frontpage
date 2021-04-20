@@ -15,32 +15,28 @@ const useStyles = makeStyles({
         width:'100vw',
         height:'100vh',
         border: '1px red solid',
+        //overflow: 'hidden'
     },
     wrapper:{
-
+        position: 'relative',
     },
     sliderContainer:{
-        
-
-    },
-    sliderContentDiv:{
-        position: 'relative',
-        width: '100%',
-        height:'100%',
-    },
-    sliderBackgroundImage:{
         position: 'absolute',
         top: '0',
         left: '0',
         width: '100%',
+        zIndex: '-2'
+    },
+    sliderContentDiv:{
+    },
+    sliderBackgroundImage:{
+        width: '100%',
         height:'100%',
         objectFit: 'cover',
-        ZIndex:'-1',
     },
     contentDiv:{
         textAlign: 'center',
-        //padding: '10em 0',
-        border: '1px red solid'
+        padding: '10em 0',
     }
 
 });
@@ -90,22 +86,6 @@ export default function NewPortal() {
     return (
         <div className={classes.root}>
 
-            <div className={classes.contentDiv} >
-
-                    <Typography variant='h5' className={classes.contentText} gutterBottom>
-                        Welcome to
-                    </Typography>
-
-                    <Typography variant='h2' className={classes.contentText} gutterBottom>
-                        Student Portal
-                    </Typography>
-                    
-                    <div className={classes.btnDiv} >
-                        <Button variant='contained' className={classes.btnDirect} >Login Now</Button>
-                    </div>
-
-            </div>
-
             <div className={classes.wrapper}>
 
                 <Slider {...settings} className={classes.sliderContainer}>
@@ -124,7 +104,21 @@ export default function NewPortal() {
 
                 </Slider>
 
-               
+                <div className={classes.contentDiv} >
+
+                    <Typography variant='h5' className={classes.contentText} gutterBottom>
+                        Welcome to
+                    </Typography>
+
+                    <Typography variant='h2' className={classes.contentText} gutterBottom>
+                        Student Portal
+                    </Typography>
+                    
+                    <div className={classes.btnDiv} >
+                        <Button variant='contained' className={classes.btnDirect} >Login Now</Button>
+                    </div>
+
+                </div>
                 
             </div>
         </div>
