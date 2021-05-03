@@ -14,8 +14,6 @@ const useStyles = makeStyles({
     root:{
         width:'100vw',
         height:'100vh',
-        border: '1px red solid',
-        //overflow: 'hidden'
     },
     wrapper:{
         position: 'relative',
